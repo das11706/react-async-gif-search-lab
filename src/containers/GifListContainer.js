@@ -33,13 +33,6 @@ class GifListContainer extends React.Component {
         gifs: threeGifs,
       });
     });
-
-    // this.setState({
-    //     gifs: search.target.value,
-    //   });
-    // this.setState({...this.state,
-    //   gifs: search,
-    // });
   }
  
   render () {

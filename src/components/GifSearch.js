@@ -13,19 +13,23 @@ export default class GifSearch extends Component {
     // this.state = {...this.state,
     //   [event.target.name]: event.target.value,
     // };
-    this.setState({...this.state,
+    // this.setState({...this.state,
+    //   search: event.target.value,
+    // });
+
+    this.setState({
       search: event.target.value,
     });
   }
 
   handleSubmit = (event) => {
     event.preventDefault();
-    console.log('state', this.state)
+    // console.log('state', this.state)
     this.props.handleSearch(this.state.search)
   }
 
   render() {
-    console.log('props', this.props)
+    // console.log('props', this.props)
     return (
       <form onSubmit={(event) => this.handleSubmit(event)}> 
         
